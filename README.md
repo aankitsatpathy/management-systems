@@ -2,10 +2,13 @@
 This repository contains 2 management systems.
 ## [Student Management System](https://github.com/laibanasir/management-systems/blob/master/student%20management.py)
 ### Features
-1. Add a student(s)
-2. Delete students
-3. Find student 
-4. Exit
+#Objective is to Run a Management System
+#Prerequisite a mysql file with database student and desired type of coloumns and rows
+1. Add a Student(s) Record
+2. Delete Students Record
+3. Find Student Record
+4. Update Student Record
+5. Exit
 ## [Supermarket Management System](https://github.com/laibanasir/management-systems/blob/master/supermarket%20management.py)
 ### Features 
 1. View items
