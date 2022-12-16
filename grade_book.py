@@ -19,7 +19,7 @@ def adds():
 
 def dels():
   a = int(input("Roll Number: "))
-  s = "DELETE FROM students WHERE Rol_ Number = {}"#dlete a row syntax
+  s = "DELETE FROM students WHERE Roll_Number = {}"#dlete a row syntax
   mycur.execute(s,a)#execute sql code
   mycon.commit()#commits changes
 
