@@ -5,12 +5,12 @@ mycur = mycon.cursor()#cursor object()
 
 def adds():
   n = input("Enter Name: ")
-  r = input("Enter Roll Number: ")
-  m = input("Math Marks: ")
-  e = input("English Marks: ")
-  p = input("Physics Marks: ")
-  b = input("Biology Marks: ")
-  c = input("Chemistry Marks: ")
+  r = int(input("Enter Roll Number: "))
+  m = int(input("Math Marks: "))
+  e = int(input("English Marks: "))
+  p = int(input("Physics Marks: "))
+  b = int(input("Biology Marks: "))
+  c = int(input("Chemistry Marks: "))
   percent = (m + p + b + c + e)/5
   s = "Insert into students(name, roll, math, english, physics, biology, chemistry, percent) VALUES (%s, %d, %d, %d, %d, %d, %d, %f)"#add coloumn syntax
   val = (name, roll, math, english, physics, biology, chemistry, percent)#assigning value to above syntax
@@ -24,7 +24,7 @@ def dels():
   mycon.commit()#commits changes
 
 def finds():
-  a = float(input("Disqualifying Percentage: "))
+  a = float(input("Roll Number: "))
   s = "select * from student where Roll_Number >= {}"#sql syntax to find rows with specified condition
   mycur.execute(s,a)#execute the sql code
   myresult = mycur.fetchall()#fetchsall the data in sql file
